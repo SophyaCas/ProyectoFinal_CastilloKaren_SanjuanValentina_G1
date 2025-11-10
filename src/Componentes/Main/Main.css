@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container {
+    background-color: #2d0707;
+    padding: 20px;
+    display: flex; /* ✅ Corregí "dispay" por "display" */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* ✅ Agregué esto para centrar verticalmente */
+    min-height: 100vh; /* ✅ Cambié height fijo por min-height */
+    width: 100%; /* ✅ Asegura que ocupe todo el ancho */
+    position: relative;
+    z-index: 1;
+}
+
+/* ✅ Si quieres centrar también el contenido horizontalmente */
+.main-container > * {
+    width: 100%;
+    max-width: 1200px; /* Opcional: limita el ancho máximo */
+    margin: 0 auto; /* Centra horizontalmente */
+}
